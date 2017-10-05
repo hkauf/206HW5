@@ -1,5 +1,11 @@
-def CountNumbers(file):
+import re
+# def CountNumbers(file):
 	
-	infile = open(file, "r")
-	newdata = [lines.split(/n) for lines in infile.readlines()]
+	# infile = open(file, "r")
+infile = open("206HW5Data.txt", "r")
+for lines in infile:
+	y = re.findall('[0-9]+', infile)
+print (y)
+
+
 
